@@ -24,12 +24,10 @@
     text-transform: uppercase;
     font-weight: 800;
     font-size: 120px;
-    line-height: 140px;
 }
 .text h1 span {
     font-weight: 700;
     font-size: 30px;
-    line-height: 38px;
     color: #FBB731;
     text-transform: uppercase;
 }
@@ -37,14 +35,12 @@
 .text p {
     font-weight: normal;
     font-size: 19px;
-    line-height: 140%;
     color: #DEDEDE;
 }
 
 .headerA {
     font-weight: 700;
     font-size: 14px;
-    line-height: 200px;
     text-align: center;
     text-transform: uppercase;
     color: #1E2F40;
@@ -52,6 +48,8 @@
     border-radius: 5px;
     padding: 20px 45px;
     text-decoration: none;
+    margin: 80px 0;
+    display: inline-block;
 }
 .headerA:hover, .mainAR:hover, .mainAL:hover {
     opacity: 0.7;
@@ -79,24 +77,26 @@
 }
 .banLeft {
     width: 580px;
-    height: 100%;
+    height: 390px;
     background-image: url(../img/left.png);
     background-size:cover;
     margin: 0 10px;
+    background-size: inherit;
 }
 .textLeft {
     width: 378px;
-    padding: 116px 152px 116px 50px;
+    padding: 116px 0px 116px 50px;
 }
 .textRight {
     width: 353px;
-    padding: 101px 177px 102px 50px;
+    padding: 101px 0px 50px 50px;
 }
 .banRight {
     width: 580px;
-    height: 100%;
+    height: 390px;
     background-image: url(../img/right.png);
     margin: 0 10px;
+    background-size: inherit;
 }
 
 .mainAL {
@@ -142,7 +142,7 @@
     padding: 20px 45px;
     text-decoration: none;
     display:inline-block;
-    margin-top: 15px
+    margin-top: 60px
 }
 footer {
     background: #1E2F40;
@@ -193,12 +193,136 @@ footer {
     margin-bottom: 9px
 }
 
+@media (max-width: 1330px) {
+    .container, .footMargin {
+        width: 96%;
+    }
+    .text h1 {
+        font-size: 80px;
+    }
+    .visual img {
+        width: 35%;
+    }
+    .bg {
+        width: 50%;
+    }
+    .banLeft, .banRight {
+        width: 500px;
+        background-size: contain;
+        height: 340px;
+    }
+    .headerA {
+        margin: 50px 0;
+    }
+    .baner {
+        margin: 100px 0;
+    }
+    .textRight {
+        padding: 60px 0px 50px 50px;
+    }
+}
 
+@media (max-width: 1200px) {
+    .text h1 {
+        font-size: 60px;
+    }
+}
 
+@media (max-width: 1023px) {
+    .baner {
+        flex-flow: wrap;
+    }
+    .banRight {
+        
+        margin-top: 20px;
+    }
+    .foot1, .foot2, .foot3, .foot4 {
+        padding: 0 15px;
+    }
+    footer {
+        height: auto;
+    }
+    .footMargin {
+        flex-flow: wrap;
+    }
+    .footMargin {
+        padding: 50px 0;
+    }
+}
 
+@media (max-width: 767px) {
+    .text h1 {
+        font-size: 40px;
+    }
+    .text h1 span {
+        font-size: 20px;
+    }
+    .headerA {
+        margin: 30px 0;
+        padding: 15px 30px;
+    }
+    .mainAR {
+        padding: 15px 30px;
+    }
+    .banLeft, .banRight {
+        width: 500px;
+        background-size: contain;
+    }
+    .banRight {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
-
-
+@media (max-width: 426px) {
+    .text h1 {
+        font-size: 30px;
+    }
+    .text h1 span {
+        font-size: 15px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .baner {
+        margin: 20px 0;
+    }
+    .textLeft {
+        width: 330px;
+        padding: 20px 0px 0px 20px;
+        margin-bottom: 20px;
+    }
+    .banLeft, .banRight {
+        height: auto;
+        background-size: cover;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .textRight {
+        padding: 20px 0px 20px 20px;
+    }
+    .mainAR {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 350px) {
+    .textRight, .textLeft {
+        width: 250px;
+    }
+    .textLeft p, .textRight p {
+        font-size: 10px;
+    }
+    .text h1 {
+        font-size: 20px;
+    }
+    .text h1 span {
+        font-size: 10px;
+    }
+    .text p {
+        font-size: 10px;
+    }
+}
 
 
 
