@@ -16,7 +16,7 @@
                     Лучшие бургеры
                 </h1>
                 <p>Закажи наши фирменные бурегры или собери что-то своё, а&nbsp;наши курьеры доставят за 30 минут</p>
-                <a href="#" class="headerA">заказать</a>
+                <button class="headerA btnPopap">заказать</button>
             </div>
             <div class="visual">
                 <div class="bg"></div>
@@ -38,7 +38,7 @@
            <div class="textRight">
             <h1>Бесплатно</h1>
             <p>При заказе на сумму 500 рублей и более - доставляем бесплатно</p>
-            <a href="#" class="mainAR">ЗАКАЗАТЬ</a>
+            <button class="mainAR btnPopap">ЗАКАЗАТЬ</button>
         </div>
         </div>
     </div>
@@ -73,5 +73,23 @@
 </div>
 </footer>
 
+<div class="popup">
+    <div class="popup_dialog">
+        <div class="popup_content text-center">
+            <button type="button" class="popup_close"><strong>&times;</strong></button>
+            <div class="popup_form">
+                <form class="form" action="#">
+                  <h2>Введите ваши данные <br>и нажмите заказать звонок</h2>
+                    <input class="form-control form_input" name="user_name" required type="text" placeholder="Введите ваше имя">
+                    <input class="form-control form_input" name="user_phone" required type="text" placeholder="Введите телефон">
+                    <button class="text-uppercase btn-block button" name="submit" type="submit">получить скидку</button>
+                    <p class="form_notice">Перезвоним в течение 10 минут</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
+<script src="script/modal.js"></script>
 </html>
