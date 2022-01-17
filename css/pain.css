@@ -55,6 +55,11 @@
     opacity: 0.7;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
 .visual img {
     max-width: 590px;
     position: absolute;
